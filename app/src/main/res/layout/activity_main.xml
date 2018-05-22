@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button android:id="@+id/btn_1x3_potrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1x3 potrait"/>
+    <Button android:id="@+id/btn_1x3_landscape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1x3 landscape"/>
+    <Button android:id="@+id/btn_1x2_potrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1x2 potrait"/>
+    <Button android:id="@+id/btn_1x2_landscape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1x2 landscape"/>
+    <Button android:id="@+id/btn_1x2_landscape_var"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1x2 landscape variant"/>
+    <Button android:id="@+id/btn_1x1_potrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1x1 potrait"/>
+    <Button android:id="@+id/btn_1x1_landscape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1x1 landscape"/>
+</LinearLayout>
