@@ -13,12 +13,20 @@ class GalleryActivity : AppCompatActivity() {
         setContentView(R.layout.activity_gallery)
 
         val collage: MediaCollage = intent.getSerializableExtra("collage") as MediaCollage
-        val gridLayoutManager = StaggeredGridLayoutManager(collage.spanCount, collage.orientation)
+//        val gridLayoutManager = StaggeredGridLayoutManager(collage.spanCount, collage.orientation)
+        val gridLayoutManager = SpannedGridLayoutManager(
+                SpannedGridLayoutManager.GridSpanLookup { position ->
+                    val mediaItem = collage.mediaCollection[position]
+                    SpannedGridLayoutManager.SpanInfo(mediaItem.colSpan, mediaItem.rowSpan)
+                },
+                collage.colCount, // number of columns
+                collage.cellAspectRatio // how big is default item
+        )
 
         list_media_items.run {
             layoutManager = gridLayoutManager
             adapter = MediaItemsAdapter(collage)
-//            addItemDecoration(ItemOffsetDecoration(context, R.dimen.item_offset))
+            addItemDecoration(ItemOffsetDecoration(context, R.dimen.item_offset))
         }
     }
 

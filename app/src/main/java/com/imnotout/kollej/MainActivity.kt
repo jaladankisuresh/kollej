@@ -18,66 +18,133 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+//        btn_1x3_potrait.setOnClickListener{
+//            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3278.JPG", 3, 0.6666F),
+//                    MediaLayout(assetPath + "IMG_3292.JPG"), MediaLayout(assetPath + "IMG_3380.JPG"),
+//                    MediaLayout(assetPath + "IMG_2868.JPG"))
+//            val collage = MediaCollage(mediaCollection, 3, StaggeredGridLayoutManager.HORIZONTAL)
+//
+//            val galleryIntent = Intent(this, GalleryActivity::class.java)
+//            galleryIntent.putExtra("collage", collage)
+//            startActivity(galleryIntent)
+//        }
+//        btn_1x3_landscape.setOnClickListener{
+//            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_2868.JPG", 3, 1.5F),
+//                    MediaLayout(assetPath + "IMG_3292.JPG"), MediaLayout(assetPath + "IMG_3380.JPG"),
+//                    MediaLayout(assetPath + "IMG_3278.JPG"))
+//            val collage = MediaCollage(mediaCollection, 3, StaggeredGridLayoutManager.VERTICAL)
+//
+//            val galleryIntent = Intent(this, GalleryActivity::class.java)
+//            galleryIntent.putExtra("collage", collage)
+//            startActivity(galleryIntent)
+//        }
+//        btn_1x2_potrait.setOnClickListener{
+//            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3278.JPG", 2, 0.6666F),
+//                    MediaLayout(assetPath + "IMG_3292.JPG", aspectRatio = 0.6666F), MediaLayout(assetPath + "IMG_3380.JPG", aspectRatio = 0.6666F))
+//            val collage = MediaCollage(mediaCollection, 2, StaggeredGridLayoutManager.HORIZONTAL)
+//
+//            val galleryIntent = Intent(this, GalleryActivity::class.java)
+//            galleryIntent.putExtra("collage", collage)
+//            startActivity(galleryIntent)
+//        }
+//        btn_1x2_landscape.setOnClickListener{
+//            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3278.JPG", 2, 1.5F),
+//                    MediaLayout(assetPath + "IMG_3292.JPG", aspectRatio = 1.5F), MediaLayout(assetPath + "IMG_3380.JPG", aspectRatio = 1.5F))
+//            val collage = MediaCollage(mediaCollection, 2, StaggeredGridLayoutManager.VERTICAL)
+//
+//            val galleryIntent = Intent(this, GalleryActivity::class.java)
+//            galleryIntent.putExtra("collage", collage)
+//            startActivity(galleryIntent)
+//        }
+//        btn_1x2_landscape_var.setOnClickListener{
+//            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3278.JPG", 2, 1.5F),
+//                    MediaLayout(assetPath + "IMG_3292.JPG"), MediaLayout(assetPath + "IMG_3380.JPG"))
+//            val collage = MediaCollage(mediaCollection, 2, StaggeredGridLayoutManager.VERTICAL)
+//
+//            val galleryIntent = Intent(this, GalleryActivity::class.java)
+//            galleryIntent.putExtra("collage", collage)
+//            startActivity(galleryIntent)
+//        }
+//        btn_1x1_potrait.setOnClickListener{
+//            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3292.JPG", aspectRatio = 0.5F),
+//                    MediaLayout(assetPath + "IMG_3380.JPG", aspectRatio = 0.5F))
+//            val collage = MediaCollage(mediaCollection, 2, StaggeredGridLayoutManager.VERTICAL)
+//
+//            val galleryIntent = Intent(this, GalleryActivity::class.java)
+//            galleryIntent.putExtra("collage", collage)
+//            startActivity(galleryIntent)
+//        }
+//        btn_1x1_landscape.setOnClickListener{
+//            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3292.JPG", aspectRatio = 2F),
+//                    MediaLayout(assetPath + "IMG_3380.JPG", aspectRatio = 2F))
+//            val collage = MediaCollage(mediaCollection, 2, StaggeredGridLayoutManager.HORIZONTAL)
+//
+//            val galleryIntent = Intent(this, GalleryActivity::class.java)
+//            galleryIntent.putExtra("collage", collage)
+//            startActivity(galleryIntent)
+//        }
+
+
         btn_1x3_potrait.setOnClickListener{
-            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3278.JPG", 3, 0.6666F),
+                        val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3278.JPG", 3, 2),
                     MediaLayout(assetPath + "IMG_3292.JPG"), MediaLayout(assetPath + "IMG_3380.JPG"),
                     MediaLayout(assetPath + "IMG_2868.JPG"))
-            val collage = MediaCollage(mediaCollection, 3, StaggeredGridLayoutManager.HORIZONTAL)
+            val collage = MediaCollage(mediaCollection, 3, 1F)
 
             val galleryIntent = Intent(this, GalleryActivity::class.java)
             galleryIntent.putExtra("collage", collage)
             startActivity(galleryIntent)
         }
         btn_1x3_landscape.setOnClickListener{
-            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_2868.JPG", 3, 1.5F),
+            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_2868.JPG", 2, 3),
                     MediaLayout(assetPath + "IMG_3292.JPG"), MediaLayout(assetPath + "IMG_3380.JPG"),
                     MediaLayout(assetPath + "IMG_3278.JPG"))
-            val collage = MediaCollage(mediaCollection, 3, StaggeredGridLayoutManager.VERTICAL)
+            val collage = MediaCollage(mediaCollection, 3, 1F)
 
             val galleryIntent = Intent(this, GalleryActivity::class.java)
             galleryIntent.putExtra("collage", collage)
             startActivity(galleryIntent)
         }
         btn_1x2_potrait.setOnClickListener{
-            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3278.JPG", 2, 0.6666F),
-                    MediaLayout(assetPath + "IMG_3292.JPG", aspectRatio = 0.6666F), MediaLayout(assetPath + "IMG_3380.JPG", aspectRatio = 0.6666F))
-            val collage = MediaCollage(mediaCollection, 2, StaggeredGridLayoutManager.HORIZONTAL)
+            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3278.JPG", 2, 2),
+                    MediaLayout(assetPath + "IMG_3292.JPG"), MediaLayout(assetPath + "IMG_3380.JPG"))
+            val collage = MediaCollage(mediaCollection, 3, 0.6666F)
 
             val galleryIntent = Intent(this, GalleryActivity::class.java)
             galleryIntent.putExtra("collage", collage)
             startActivity(galleryIntent)
         }
         btn_1x2_landscape.setOnClickListener{
-            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3278.JPG", 2, 1.5F),
-                    MediaLayout(assetPath + "IMG_3292.JPG", aspectRatio = 1.5F), MediaLayout(assetPath + "IMG_3380.JPG", aspectRatio = 1.5F))
-            val collage = MediaCollage(mediaCollection, 2, StaggeredGridLayoutManager.VERTICAL)
+            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3278.JPG", 2, 2),
+                    MediaLayout(assetPath + "IMG_3292.JPG"), MediaLayout(assetPath + "IMG_3380.JPG"))
+            val collage = MediaCollage(mediaCollection, 2, 1.5F)
 
             val galleryIntent = Intent(this, GalleryActivity::class.java)
             galleryIntent.putExtra("collage", collage)
             startActivity(galleryIntent)
         }
         btn_1x2_landscape_var.setOnClickListener{
-            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3278.JPG", 2, 1.5F),
+            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3278.JPG", 2, 2),
                     MediaLayout(assetPath + "IMG_3292.JPG"), MediaLayout(assetPath + "IMG_3380.JPG"))
-            val collage = MediaCollage(mediaCollection, 2, StaggeredGridLayoutManager.VERTICAL)
+            val collage = MediaCollage(mediaCollection, 2, 1.5F)
 
             val galleryIntent = Intent(this, GalleryActivity::class.java)
             galleryIntent.putExtra("collage", collage)
             startActivity(galleryIntent)
         }
         btn_1x1_potrait.setOnClickListener{
-            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3292.JPG", aspectRatio = 0.5F),
-                    MediaLayout(assetPath + "IMG_3380.JPG", aspectRatio = 0.5F))
-            val collage = MediaCollage(mediaCollection, 2, StaggeredGridLayoutManager.VERTICAL)
+            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3292.JPG"),
+                    MediaLayout(assetPath + "IMG_3380.JPG"))
+            val collage = MediaCollage(mediaCollection, 2, 0.5F)
 
             val galleryIntent = Intent(this, GalleryActivity::class.java)
             galleryIntent.putExtra("collage", collage)
             startActivity(galleryIntent)
         }
         btn_1x1_landscape.setOnClickListener{
-            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3292.JPG", aspectRatio = 2F),
-                    MediaLayout(assetPath + "IMG_3380.JPG", aspectRatio = 2F))
-            val collage = MediaCollage(mediaCollection, 2, StaggeredGridLayoutManager.HORIZONTAL)
+            val mediaCollection = listOf(MediaLayout(assetPath + "IMG_3292.JPG"),
+                    MediaLayout(assetPath + "IMG_3380.JPG"))
+            val collage = MediaCollage(mediaCollection, 1, 2F)
 
             val galleryIntent = Intent(this, GalleryActivity::class.java)
             galleryIntent.putExtra("collage", collage)
